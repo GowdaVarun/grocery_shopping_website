@@ -1,0 +1,216 @@
+.cart-page {
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  .cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .cart-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .empty-cart {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.125rem;
+  }
+  
+  .continue-shopping {
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #16a34a;
+    color: white;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    border: none;
+  }
+  
+  .continue-shopping:hover {
+    background-color: #15803d;
+  }
+  
+  .cart-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .cart-content {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+  .cart-items {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-image {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+  
+  .item-name {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .item-price {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin: 0.25rem 0 0;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+  }
+  
+  .quantity-btn {
+    background: none;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b5563;
+  }
+  
+  .quantity-btn:hover {
+    color: #16a34a;
+  }
+  
+  .quantity {
+    padding: 0 0.75rem;
+    min-width: 2rem;
+    text-align: center;
+  }
+  
+  .item-total {
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+  }
+  
+  .remove-btn:hover {
+    color: #b91c1c;
+  }
+  
+  .cart-summary {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    height: fit-content;
+  }
+  
+  .summary-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    color: #4b5563;
+  }
+  
+  .free-shipping-msg {
+    font-size: 0.75rem;
+    color: #16a34a;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f0fdf4;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #1f2937;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #15803d;
+  }
+  
+  .continue-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #16a34a;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  
+  .continue-link:hover {
+    text-decoration: underline;
+  }
