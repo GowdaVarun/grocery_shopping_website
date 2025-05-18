@@ -31,7 +31,21 @@ const Cart = ({ cartItems, setCartItems, user, isAuthenticated, onLogout }) => {
       navigate('/login');
       return;
     }
-    
+      
+      const newOrder = {
+      id: `ORD-${Math.floor(10000 + Math.random() * 90000)}`,
+      date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+      total: total,
+      status: "Processing",
+      items: cartItems.length
+    };
+
+    // Get existing orders or empty array
+    const existingOrders = JSON.parse(localStorage.getItem('userOrders')) || [];
+    // Add new order to the beginning
+    const updatedOrders = [newOrder, ...existingOrders];
+    localStorage.setItem('userOrders', JSON.stringify(updatedOrders));
+
     // Normally you would process the order here
     alert('Order placed successfully!');
     setCartItems([]);
